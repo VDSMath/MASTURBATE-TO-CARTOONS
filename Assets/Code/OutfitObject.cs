@@ -5,9 +5,7 @@ public abstract class OutfitObject : ScriptableObject
 {
     public string outfitName = "New Outfit";
 
-    public Sprite headSprite;
-    public Sprite torsoSprite;
-    public Sprite legSprite;
+    public Sprite hairBackSprite, torsoSprite, faceSprite, hairSprite, eyesSprite, mouthSprite, noseSprite;
 
     public AudioClip clipSample;
 }
