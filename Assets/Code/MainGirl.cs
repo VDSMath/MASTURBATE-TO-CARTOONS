@@ -66,49 +66,49 @@ public class MainGirl : MonoBehaviour {
                 currentHairBack = next ? currentHairBack + 1 : currentHairBack - 1;
                 currentHairBack = currentHairBack > hairBackOptions.Capacity - 1 ? currentHairBack - hairBackOptions.Capacity : currentHairBack;
                 currentHairBack = currentHairBack < 0 ? hairBackOptions.Capacity - 1 : currentHairBack;
-                hairBackImage.sprite = hairBackOptions[currentHairBack]; 
+                current.hairBackSprite = hairBackImage.sprite = hairBackOptions[currentHairBack]; 
                 break;
 
             case "torso":
                 currentTorso = next ? currentTorso + 1 : currentTorso - 1;
                 currentTorso = currentTorso > torsoOptions.Capacity - 1 ? currentTorso - torsoOptions.Capacity : currentTorso;
                 currentTorso = currentTorso < 0 ? torsoOptions.Capacity - 1 : currentTorso;
-                torsoImage.sprite = torsoOptions[currentTorso];
+                current.torsoSprite = torsoImage.sprite = torsoOptions[currentTorso];
                 break;
 
             case "face":
                 currentFace = next ? currentFace + 1 : currentFace - 1;
                 currentFace = currentFace > faceOptions.Capacity - 1 ? currentFace - faceOptions.Capacity : currentFace;
                 currentFace = currentFace < 0 ? faceOptions.Capacity - 1 : currentFace;
-                faceImage.sprite = faceOptions[currentFace];
+                current.faceSprite = faceImage.sprite = faceOptions[currentFace];
                 break;
 
             case "hair":
                 currentHair = next ? currentHair + 1 : currentHair - 1;
                 currentHair = currentHair > hairOptions.Capacity - 1 ? currentHair - hairOptions.Capacity : currentHair;
                 currentHair = currentHair < 0 ? hairOptions.Capacity - 1 : currentHair;
-                hairImage.sprite = hairOptions[currentHair];
+                current.hairSprite = hairImage.sprite = hairOptions[currentHair];
                 break;
 
             case "eyes":
                 currentEyes = next ? currentEyes + 1 : currentEyes - 1;
                 currentEyes = currentEyes > eyesOptions.Capacity - 1 ? currentEyes - eyesOptions.Capacity : currentEyes;
                 currentEyes = currentEyes < 0 ? eyesOptions.Capacity - 1 : currentEyes;
-                eyesImage.sprite = eyesOptions[currentEyes];
+                current.eyesSprite = eyesImage.sprite = eyesOptions[currentEyes];
                 break;
 
             case "mouth":
                 currentMouth = next ? currentMouth + 1 : currentMouth - 1;
                 currentMouth = currentMouth > mouthOptions.Capacity - 1 ? currentMouth - mouthOptions.Capacity : currentMouth;
                 currentMouth = currentMouth < 0 ? eyesOptions.Capacity - 1 : currentMouth;
-                mouthImage.sprite = mouthOptions[currentMouth];
+                current.mouthSprite = mouthImage.sprite = mouthOptions[currentMouth];
                 break;
 
             case "nose":
                 currentNose = next ? currentNose + 1 : currentNose - 1;
                 currentNose = currentNose > noseOptions.Capacity - 1 ? currentNose - noseOptions.Capacity : currentNose;
                 currentNose = currentNose < 0 ? noseOptions.Capacity - 1 : currentNose;
-                noseImage.sprite = noseOptions[currentNose];
+                current.noseSprite = noseImage.sprite = noseOptions[currentNose];
                 break;
         }
     }
